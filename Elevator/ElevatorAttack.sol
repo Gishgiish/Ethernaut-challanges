@@ -17,7 +17,7 @@ contract Attack {
         return false;
     }
 
-    function attack(address _target) external {
+    function attack(address _target /*instance address*/) external {
         IElevator elevator = IElevator(_target);
 
         elevator.goTo(1);

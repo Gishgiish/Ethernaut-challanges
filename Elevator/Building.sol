@@ -20,7 +20,7 @@ contract Elevator {
 }
 
 contract Floors is Elevator {
-    Elevator public el = Elevator(0xc52432A65B987F53CdE9d2EA33a2C4F6F28905aD);
+    Elevator public el = Elevator(0xc52432A65B987F53CdE9d2EA33a2C4F6F28905aD); //instance address
     bool public switchFlipped = false;
 
     function isLastFloor(uint) external returns (bool) {
